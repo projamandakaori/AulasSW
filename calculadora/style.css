@@ -1,0 +1,55 @@
+body{
+background-color: #f8f6f0 ;
+}
+
+.borda{
+  position: absolute;
+  background-color:#f7d8d0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black
+  
+}
+
+.botao{
+  width: 4rem;
+  height: 3rem;
+  border: none;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: #f3b7a8;
+  box-shadow: 0 4px #c3c0b5;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.visor{
+    background-color: #f3b7a8;
+    padding: 15px;
+    border-radius: 0.5rem;
+    text-align: right;
+    height: 5vh;
+    margin: 0.5rem;
+    width: calc(4rem * 4 + 0.3rem * 3 * 2); 
+    box-sizing: border-box;
+}
+
+table{
+  margin: 0 auto;
+  border-spacing: 0.3rem; 
+  padding: 15px;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+td{
+  padding: 0;
+}
+
+h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f3b7a8;
+  
+}

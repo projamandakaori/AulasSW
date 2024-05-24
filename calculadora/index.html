@@ -1,33 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
     <script src="calc.js"></script>
-
-    <input type="text" id="Visor">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h1>Calculadora</h1>
     <br>
-    <button id="num1" onclick="num1()">1</button>
-    <button id="num2" onclick="num2()">2</button>
-    <button id="num3" onclick="num3()">3</button>
-    <button id="num4" onclick="num4()">4</button>
-    <button id="btnmais" onclick="btnmais()">+</button>
-    <br>
-
-    <button id="num5" onclick="num5()">5</button>
-    <button id="num6" onclick="num6()">6</button>
-    <button id="num7" onclick="num7()">7</button>
-    <button id="num8" onclick="num8()">8</button>
-    <button id="btnmenos" onclick="btnmenos()">-</button>
-    <br>
-
-    <button id="num9" onclick="num9()">9</button>
-    <button id="num0" onclick="num0()">0</button>
-    <button id="btnvirg" onclick="btnvirg()">,</button>
-    <button id="btnc" onclick="btnc()">C</button>
-    <button id="btnvezes" onclick="btnvezes()">*</button>
-    <br>
-
-    <button id="btnseta" onclick="btnseta()">[-</button>
-    <button id="btnporc" onclick="btnporc()">%</button>
-    <button id="btnce" onclick="btnce()">CE</button>
-    <button id="btnigual" onclick="btnigual()">=</button>
-    <button id="btndiv" onclick="btndiv()">/</button>
-</tml>
-
+        <div class="borda">
+        <input type="text" id="Visor" class="visor" value="0">
+        <table>
+            <tr>
+                <td><button id="btnce" class="botao" onclick="exibirNumero('CE')">CE
+                <td><button id="btnc" class="botao" onclick="exibirNumero('C')">C</button></td>
+                <td><button id="btnseta" class="botao" onclick="exibirNumero('[-')">[-</button></td>
+                <td><button id="btnporc" class="botao" onclick="exibirNumero('%')">%</button></td>
+            </tr>
+            <tr>
+                <td><button id="num1" class="botao" onclick="exibirNumero(1)">1</button></td>
+                <td><button id="num2" class="botao" onclick="exibirNumero(2)">2</button></td>
+                <td><button id="num3" class="botao" onclick="exibirNumero(3)">3</button></td>
+                <td><button id="btnmais" class="botao" onclick="exibirNumero('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="num4" class="botao" onclick="exibirNumero(4)">4</button></td>
+                <td><button id="num5" class="botao" onclick="exibirNumero(5)">5</button></td>
+                <td><button id="num6" class="botao" onclick="exibirNumero(6)">6</button></td>
+                <td><button id="btnmenos" class="botao" onclick="exibirNumero('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="num7" class="botao" onclick="exibirNumero(7)">7</button></td>
+                <td><button id="num8" class="botao" onclick="exibirNumero(8)">8</button></td>
+                <td><button id="num9" class="botao" onclick="exibirNumero(9)">9</button></td>
+                <td><button id="btnvezes" class="botao" onclick="exibirNumero('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="num0" class="botao" onclick="exibirNumero(0)">0</button></td>
+                <td><button id="btnvirg" class="botao" onclick="exibirNumero(',')">,</button></td>
+                <td><button id="btnigual" class="botao" onclick="exibirNumero('=')">=</button></td>
+                <td><button id="btndiv" class="botao" onclick="exibirNumero('/')">/</button></td>
+            </tr>
+        </table>
+    </center>
+        </div>
+</body>
+</html>
